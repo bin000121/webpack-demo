@@ -28,5 +28,6 @@ module.exports = {
         "vue"
     ],
     "rules": {
+        "indent": ['warn', 2],// 两行缩进
     }
 };
