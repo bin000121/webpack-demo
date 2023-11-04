@@ -9,6 +9,7 @@
 import { onMounted } from 'vue'
 import dayjs from 'dayjs'
 onMounted(() => {
+  console.log("121212312")
 })
 </script>
 <style scoped lang="scss">
