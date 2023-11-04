@@ -1,3 +1,8 @@
+// 提交格式： <type>(<scope>): <subject>
+// type 必填项 表示commit 的类型， 为  type-enum 中的 值
+// scope 非必填项   表示影响的范围，可以是文件名也可以是模块名，随你定
+// subject 必填项 表示此次提交的内容
+// example 常用提交 git commit -m "feat: 新增xxx功能" ; git commit -m "fix: 修复了xxxbug"
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
@@ -19,14 +24,14 @@ module.exports = {
       ],
     ],
     'type-empty': [2, 'never'], // never: type不能为空; always: type必须为空
-    'type-case': [0, 'always', 'lower-case'], // type必须小写，upper-case大写，camel-case小驼峰，kebab-case短横线，pascal-case大驼峰，等等
-    'scope-empty': [0],
-    'scope-case': [0],
-    'subject-empty': [2, 'never'], // subject不能为空
-    'subject-case': [0],
-    'subject-full-stop': [0, 'never', '.'], // subject以.为结束标记
-    'header-max-length': [2, 'always', 72], // header最长72
-    'body-leading-blank': [0], // body换行
-    'footer-leading-blank': [0, 'always'], // footer以空行开头
+    'type-case': [2, 'always', 'lower-case'], // type必须小写，upper-case大写，camel-case小驼峰，kebab-case短横线，pascal-case大驼峰，等等
+    // 'scope-empty': [0],
+    // 'scope-case': [0],
+    // 'subject-empty': [2, 'never'], // subject不能为空
+    // 'subject-case': [0],
+    // 'subject-full-stop': [0, 'never', '.'], // subject以.为结束标记
+    // 'header-max-length': [2, 'always', 72], // header最长72
+    // 'body-leading-blank': [0], // body换行
+    // 'footer-leading-blank': [0, 'always'], // footer以空行开头
   }
 }

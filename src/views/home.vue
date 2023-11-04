@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     home123132311131
-    {{dayjs(Date.now()).format('YYYY-MM-DD HH:mm:ss')}}
+    {{ dayjs(Date.now()).format('YYYY-MM-DD HH:mm:ss') }}
   </div>
 </template>
 
@@ -9,11 +9,11 @@
 import { onMounted } from 'vue'
 import dayjs from 'dayjs'
 onMounted(() => {
-  console.log("121212312")
+  console.log('121212312123213')
 })
 </script>
 <style scoped lang="scss">
-.home{
+.home {
   background-color: blue;
 }
 </style>

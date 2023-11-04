@@ -29,5 +29,6 @@ module.exports = {
     ],
     "rules": {
         "indent": ['warn', 2],// 两行缩进
+        "vue/multi-word-component-names": 'off'
     }
 };
